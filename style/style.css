@@ -26,6 +26,7 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--secondary-color);
     overflow-x: hidden;
+    user-select: none;
 }
 
 .top {

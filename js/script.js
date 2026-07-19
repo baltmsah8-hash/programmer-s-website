@@ -120,3 +120,22 @@ searchBtn.addEventListener('click', () => {
         alert('Please enter a search term.');
     }
 });
+
+// event for input focus and blur
+
+const inputs = document.querySelectorAll('input');
+inputs.forEach(input =>{
+    input.addEventListener('focus', function() {
+        this.nextElementSibling.style.top = '-4px';
+    });
+    input.addEventListener('blur', function() {
+        let inputValue = this.value;
+        const label = this.nextElementSibling;
+        if (inputValue.trim() !== '') {
+            label.style.opacity = '0';
+        } else {
+            label.style.opacity = '1';
+            label.style.top = '50%';
+        }
+    });
+});

@@ -489,6 +489,7 @@ main {
         .card {
             opacity: 0;
             max-height: 14rem;
+            min-width: 22rem;
             max-width: 24rem;
             border-radius: 24px;
             position: relative;
